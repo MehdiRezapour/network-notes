@@ -7,5 +7,3 @@
 5. [VRF-Lite](05-vrf.md)
 6. [DMVPN](06-dmvpn.md) – NHRP, phases, IKEv2/IPsec protection
 7. [Security](07-security.md) – uRPF, IPv6 ACL
-
-🧪 **Labs:** [07 EIGRP](../labs/ccnp-enarsi-07-eigrp-named-mode/README.md) · [08 DMVPN](../labs/ccnp-enarsi-08-dmvpn-phase3/README.md) · [09 VRF-Lite](../labs/ccnp-enarsi-09-vrf-lite/README.md) · [12 IPv6](../labs/ccnp-enarsi-12-ipv6-slaac-dhcpv6-ospfv3/README.md)

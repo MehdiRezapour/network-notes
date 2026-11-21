@@ -1,0 +1,550 @@
+User mode
+Switch>
+en
+Privilege mode
+Switch#
+Setup
+Sh version
+Sh access_list
+Sh clock 
+Sh ip protocol 
+Sh ip interface brief
+Sh arp 
+Sh mac address_table
+Sh startup_config 
+Sh running_config
+Sh flash:
+Copy running_config  startup_config 
+write _memory
+Write erase
+reload
+Sh cdp 
+Sh cdp neighbors detail
+Sh lldp neighbors detail
+Sh interface fastethernet 0/1
+Sh interface gigabitethernet 0/0/0
+Configure terminal
+Configure mode 
+Interface gigabitethernet 0/0/0
+(Configure _ if)#
+No shutdown 
+ip address 192.168.1.1 255.255.255.0
+Description link to s 1
+Exit
+host name r1
+Interface range gigabit 0/0/0 _ 0/0/3
+No cdp run
+Or
+No cdp enable 
+Interface  range fastethernet 0/1 _ 5 , fastethernet 0/10
+Interface vlan 1
+No shutdown 
+ip address 192.168.1.2 255.255.255.0
+Exit
+ip default_ gateway 192.168.1.1
+Interface gigabitethernet 0/0/0
+Media_type sfp
+
+lldp transmit
+lldp receive
+
+do sh ip int br
+Speed 100
+Duplex half
+
+Authentication
+
+line console 0
+Password 12345
+login 
+or
+line console 0
+login local
+Exit 
+username admin password 12345
+enable secret 12345
+Or
+No User admin 
+username admin secret 12345
+
+Configure 
+Service password _encryption 
+Or
+No Service password _encryption 
+
+Time
+exec_timeout 10
+
+Logging synchronous 
+بعد از ctrl z که log میندازه دستور خراب نشه.
+
+Sh Privilege 
+username admin Privilege 1 secret 123456
+
+enable secret 123456
+
+Privilege exec level 5 show running_config 
+
+line vty 0
+line vty 0 11
+login local
+میتوان از راه دور وصل شد
+cmd:telnet 192.168.1.1
+Line vty
+no login local 
+password 124
+Login
+
+access_list 1 permit host 192.168.1.11
+access_class 1 in
+Sh access_list
+
+transport input none.ssh.telnet.all
+transport output none
+
+ip name_server 192.168.1.3
+
+SSH
+ ip domain _name test.local
+crypto key generate RSA 
+768 or 1024
+ip ssh version 2
+
+ssh -L admin 192.168.1.1 
+password:12345
+
+AAA
+aaa new _ model 
+radius server my serv
+address ipv4 192.168.1.2
+Key cisco 123
+aaa Authentication enable default group 
+radius  local
+ aaa Authentication login my remote group radius local
+ line vty 0 
+login Authentication my remote 
+
+banner login @
+‐--------------------‐--@@@-------@----------@-@@-#
+Waring !!!!!!!!!!!!!!!!!!!+!+++++!!!!!!
+_______________@@@_____@____×_×_×_×_×
+@
+
+banner exec
+banner motd
+
+Time
+ npt server
+npt master
+
+  Password ricavery for router 
+Ctrl +pause break
+or 
+Ctrl +c
+ rommon1> confreg 0x2142
+rommon 2>boot
+#################
+dir flash 
+Sh flash: 
+
+Copy startup_config  running_config 
+
+no user admin
+ no enable secret 
+
+Configure _register 0x2102
+ساخت اکانت جدید
+
+Password ricavery switch 
+flash_init
+dir flash:
+rename flash:config.text flash: config.text.old
+boot
+  Copy flash:running_config 
+config. text.old
+
+delete flash:
+Config .text.old
+
+no service password _ricavery  دیگه ریکاوری نمیشه 
+
+      
+secure boot_image 
+ نتونه حذف کنهIos 
+secure boot _config
+ کانفیگ امن باشه
+Sh secure bootset
+
+Spanning tree port fast
+
+Backup 
+Copy running_config tftp:
+ Copy startup_config tftp:
+Copy flash:tftp:
+Copy tftp:flash:
+boot system flash (ios)
+
+Copy tftp:running_config 
+Copy tftp:startup_config 
+
+Routing 
+ 
+ip route 10.10.1.0 255.255.255.0 
+gigabitethernet 0/0/0
+یا اینترفیس خودت 
+Or 
+ip route 10.10.1.0 255.255.255.0 10.11.12.1
+یا آدرس ip اینترفیس روتر مقابل 
+sh ip Route
+(S) 10.10.1.0
+
+Ip route 0.0.0.0 0.0.0.0 185.185.185.2 2
+مسیر جایگزین ، backup,  به خاطر ad 2
+
+Dynamic routing
+
+router rip version 2
+no auto_summary
+Network 10.0.0.0
+Network 172.16.0.0
+
+Dynamic route OSPF 
+ 
+router ospf 1
+
+Network 192.168.1.1 0.0.0.0 area 0
+Network 100.100.100.0 0.0.0.255 area 0
+Sh ip ospf interface brief 
+Sh ip ospf neighbors 
+Debug ip ospf event 
+Debug ip ospf adj
+Undebug all
+Sh ip ospf database 
+Sh ip Route ospf 
+Clear ip ospf processes 
+Route ID 1.1.1.1
+Passive–interface fa 0/0
+Or
+
+Passive–interface default 
+no Passive–interface seryal 0/1/0
+Interface loopbak 1
+Ip address 2.2.2.2 255.255.255.0
+ولی به صورت پیش فرض /۳۲ در نظر گرفته میشه 
+Ip ospf Network point– to– point
+با این دستور با /24 شناخته میشه 
+
+Int g 0/0
+Ip ospf priority 3
+برای انتخاب DR به صورت دستی 
+
+Int g 0/0
+Ip ospf priority 2
+برای انتخاب BDR
+
+Ip ospf cost 10
+auto–cost reference bandwidth 1000
+
+Ip address dhcp
+Default –information originate always 
+Or
+Default –information originate 
+Ip domain lookup 
+
+area 10 range 192.168.0.0 255.255.252.0
+
+Ip ospf Authentication 
+Ip ospf Authentication–key cisco123
+
+برای وصل شدن به یک شبکه به شبکه دیگر طبق قانون multi area  ، اگر شبکه اول داری area 0,10,20 بود باید شبکه دوم area 0 قرار داد به عنوان backbone  و آن را به area 0 یا backbone شبکه اول وصل کرد با subnet id مشترک تا ospf هم بشناسد
+
+Vlan 10
+Vlan 10-100
+name mali
+Exit 
+Interface fa 0/0
+Switch port access vlan 10
+Or
+Int range fa 0/1 _ 3
+switch port access vlan 10
+
+int g 0/1
+Switch port trunk encapsulation dot1q
+برای ILS , یا dot1q
+Switch port mode traunk 
+Sh interface trunk 
+Sh vlan br
+
+Int g 0/1 
+Switch port trunk native vlan 99
+
+Switch port mode access
+Switch port mode traunk 
+Switch mode Dynamic auto 
+Switch port mode Dynamic desirable 
+برای امنیت بهتر هر دو طرف trunk باشه
+ switch port nonegotiate
+Sh dtp
+ نتونه از dtp استفاده کنه
+از default,  Dynamic auto  
+به static access تبدیل میشه 
+Sh Switch port interface 
+Switch port trunk alowed vlan 30
+
+Sh vtp status 
+Vtp mode client, server, transparent
+Vtp domain 
+Vtp version
+
+erase startup_config 
+Reset factory 
+Delete flash: vtp.dat
+
+Vlan 10
+Sta suspend
+هر جا که vlan 10 وجود داره  , می‌بنده 
+به وسیله vtp
+
+Vlan 10
+  Shutdown down 
+داخل خود سوییچ بدون نیاز به vtp
+Roas sub interface 
+Int g 0/0/0
+No shut down 
+Interface g 0/0/0.10
+encapsulation dot1q 10
+encapsulation dot1q 10 native 10
+اگر native 10 بود ، تا تگ بشناسه
+
+Ip routing
+No Switch port 
+
+Sh run _begin line
+
+Sh run |sec ip route 
+
+HSRP
+Standby 10 ip 192.168.10.1
+Sh Standby 
+
+Sh standby br
+Standby priority 105
+Standby 10 preempt
+Standby timer 1 3
+Standby version 2
+Standby 10 Authentication 
+
+DHCP
+ip dhcp pool my dhcp
+network 192.168.1.0 255.255.255.0
+default – router 192.168.1.1
+dns–server 8.8.8.8
+ip dhcp excluded–address 192.168.1.1 192.168.1.19
+رزور ، برای اینکه به کسی نده
+Sh ip dhcp pool
+Sh run | sec dhcp
+Clear ip dhcp conflict *
+Sh ip dhcp binding
+
+int g 0/0/0.10
+Dhcp relay agent 
+ip helper –address 10.10.10.10
+int g 0/0/0.20
+Dhcp relay agent 
+ip helper –address 10.10.10.10
+
+Spanning tree 
+No Spanning tree valn1
+
+Sh Spanning–tree
+
+Int fa 0/2
+Spanning –tree vlan1 port–priority 
+
+Spanning –tree vlan 1 priority 
+
+Int fa 0/1
+Spanning tree port fast 
+در صورتی که mode , access باشه 
+برای اینکه اینترفیس bpdu در یافت نکنه 
+Int fa 0/1 
+Spanning –tree bpdugurd enable 
+Debug Spanning tree events 
+
+ اصلی Spanning – tree valn1 root primary 
+برای backup 
+ Spanning –tree vlan 1 root secondary 
+Spanning – tree mode rapid–pvst
+
+Protocol ieee
+Spanning tree معمولی 
+Spanning –tree gurd root
+Sh Spanning –tree summary 
+
+Ether channel 
+channel–group mode desirable
+Sh etherchannel summary 
+انواع mode
+Desirable (pagp)
+Auto (pagp)
+Active (lacp)
+Passive (lacp)
+On (static)
+Interface port–channel 2
+Switch port mode traunk 
+Port –channel load–balance  src–dst–ip
+
+Interface fa 0/1
+Switch port mode access 
+Switch port  port –security 
+Switch port port –security maximum 4
+Switch port port –security violation restrict
+Switch port –security mac address 
+Switch port –security mac address sticky 
+Ip dhcp snooping 
+Ip dhcp snooping vlan 1
+Int f 0/1
+Ip dhcp snooping trust
+Sh ip dhcp snooping binding 
+Int fa 0/1
+Ip dhcp snooping limit rate 5
+Ip arp inspection validate 
+Ip arp inspection vlan 1
+Int fa 0/1
+Ip arp inspection trust 
+Sh ip arp inspection
+
+access_list 1 deny host 192.168.10.10
+Int g 0/0/2
+Ip access–group out
+access_list 1 permit host 192.168.10.11
+Or
+access_list 1 permit 192.168.10.0 0.0.0.255
+access_list 1 remark test
+access_list 1 permit any
+access_list 1 deny any
+extended 
+access_list 100 deny icmp any 10.10.10.0 0.0.0.255
+access_list 100 deny udp 172.16.16.0 0.0.0.255 10.10.10.0 0.0.0.255 eq 53
+
+access_list 100 permit ip any 10.10.10.0 0.0.0.255
+
+Ip access_group 100 out
+ip access_list  standard 1
+ip access_list standard 1
+8 deny host 192.168.1.1
+15 deny host 10.10.10.1
+No 8
+--------------------
+پروژه ۱
+Ip access_list extended 100
+permit tcp host 10.1.2.101 host 10.1.1.101 eq 80
+permit tcp host 10.1.2.102 host 10.1.1.102 eq 443
+
+deny ip 10.1.2.1 0.0.0.255 10.1.1.0 0.0.0.255
+
+Permit ip 10.1.2.0 0.0.0.255 any
+
+________________________________
+
+پروژه ۲ 
+
+Permit tcp host 10.1.2.101 host 10.1.1.101
+Permit tcp host 10.1.2.101 host 10.1.1.102
+Deny ip 10.1.2.0 0.0.0.255 10.1.1.0 0.0.0.255
+Permit ip 10.1.2.0 0.0.0.255 any
+////////_______________________\\\\\\\
+
+Permit tcp any 10.1.2.0 0.0.0.255 established:
+^ فقط در حالتی که یک بار رفته و برگشته باشه
+_____________________________________
+Int g 0/0/0 
+ Ip nat inside
+Int g 0/0/1
+Ip nat outside 
+   Exit  ---- پایین nat
+Ip nat inside source static 10.10.10.10  static:100.100.100.1
+Dynamic 
+access_list 1 permit 10.10.10.0 0.0.0.255
+Ip nat pool test  100.100.100.0 100.100.100.4 net mask 255.255.255.252
+
+//Ip nat inside source statics list 1 pool test
+^^^^ nat
+Ip nat inside source list 1 pool test overload :pat
+Sh ip nat transliteration 
+
+Ip nat inside source list 1 pool test overload ------>pat
+___________________________________
+
+Int g 0/0/1 
+Ip nat inside 
+Int g 0/0/0 
+Ip nat outside 
+Exit
+
+ip nat pool test1 200.200.200.0 200.200.200.4 net mask 255.255.255.248
+Ip nat inside source list 1 pool test1 overload 
+Or
+Ip nat inside source list 1 interface g 0/0/0 overload 
+Ip nat inside source static tcp 10.10.10.10 443
+
+200.200.200.1
+443
+
+Clear ip nat transliteration *
+
+Ipv6 unicast– routing 
+int g 0/0/0
+Ipv6 address 2001:db8:1:1::/64 eui– 64
+Or
+Ipv6 address 2001:db8:1:1::1/64
+
+Ipv6 address fe80::1 link local
+Sh ipv6 int br
+Sh ipv6 neighbors 
+
+Ipv6 route ::/0 2001:a:b:12::1
+sh ipv6 route
+Ipv6 route 2001:a:b:24::/64 2001:a:b:12::1
+Ipv6 router ospf 1
+Route ID 1.1.1.1
+Int g 0/0/0
+Ipv6 ospf 1 area 0
+Sh ipv6 ospf neighbors 
+Sh ipv6 ospf interface brief
+Sh ipv6 route ospf 
+Ipv6 dhcp pool test 
+address prefix 2001:a:b:1::/64
+Option 43 ip 192.168.1.9
+Wlc معرفی میکنه
+-----------------------------------------
+Sh Logging 
+Logging trap Debugin
+terminal monitor 
+Login host
+Snmp–server community mysnmp1 ro
+Snmp–server community mysnmp2 rw 
+Snmp –server host 10.10.10.1 my Snmp 1
+Snmp –server enable traps config 
+
+Snmp –server group myself  v3 priv 
+Snmp – server user cisco myself v3 auth sha cisco123 priv aes 256 cisco321
+همش gns3
+
+Sh power inline 
+Int fa 0/1
+Power inline never 
+Power inline auto
+--------------------------------------------------------------------
+Int tunel 1
+tunel source 100.100.100.1
+Or
+tunel source gigabitethernet 0/1
+tunel destination 200.200.200.1
+Ip address 172.16.16.1 255.255.255.0
+///////////////////////////////////////////////
+Switch port host
+erase startup_config 
+
+Finish 
+.

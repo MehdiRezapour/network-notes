@@ -20,6 +20,13 @@ Organized CLI notes with explanations, corrected commands and verification steps
 | 🔵 **CCNP ENCOR** | [Advanced switching, EIGRP/OSPF/BGP, FHRP, security, VPN, automation](ccnp-encor/README.md) |
 | 🟣 **CCNP ENARSI** | [DHCP/IPv6, advanced EIGRP/OSPF/BGP, VRF, DMVPN, uRPF](ccnp-enarsi/README.md) |
 
+
+## 🧪 Labs
+
+| Lab | Description |
+|-----|-------------|
+| [Campus Lab: MikroTik + Cisco IOSv (EVE-NG)](labs/ccna-mikrotik-campus-eve-ng/README.md) | 2 MikroTik + 2 IOSv routers and 6 switches: VLANs, ROAS, PAgP EtherChannel, STP, port security, DHCP, static routing. Includes a VTP extension |
+
 ## 🗺️ Suggested study path
 
 ```mermaid

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 790" width="1250" height="790" font-family="Arial, Helvetica, sans-serif">
+<rect width="1250" height="790" fill="#ffffff"/>
+<text x="625.0" y="22" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a202c">Campus Lab - MikroTik + Cisco IOSv (EVE-NG)</text>
+<rect x="20" y="280" width="520" height="470" rx="10" fill="#2b6cb0" fill-opacity="0.12" stroke="#2b6cb0" stroke-dasharray="6 4"/>
+<text x="28" y="296" font-size="12" fill="#2b6cb0" font-weight="bold">Block D  172.20.16.192/26  (behind vIOS4)</text>
+<rect x="560" y="280" width="510" height="470" rx="10" fill="#2f855a" fill-opacity="0.12" stroke="#2f855a" stroke-dasharray="6 4"/>
+<text x="568" y="296" font-size="12" fill="#2f855a" font-weight="bold">Block C  172.20.16.128/26  (behind vIOS3)</text>
+<line x1="1130.0" y1="60.0" x2="1130.0" y2="180.0" stroke="#4a5568" stroke-width="2"/>
+<text x="1119" y="148" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">eth1</text>
+<line x1="1130.0" y1="180.0" x2="880.0" y2="180.0" stroke="#4a5568" stroke-width="2"/>
+<text x="1062" y="169" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">eth2</text>
+<text x="948" y="169" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">eth1</text>
+<text x="1005" y="192" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">10.16.12.0/24</text>
+<line x1="880.0" y1="180.0" x2="600.0" y2="180.0" stroke="#4a5568" stroke-width="2"/>
+<text x="804" y="169" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">eth2</text>
+<text x="676" y="169" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0</text>
+<text x="740" y="192" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">10.16.23.0/24</text>
+<line x1="600.0" y1="180.0" x2="260.0" y2="180.0" stroke="#4a5568" stroke-width="2"/>
+<text x="508" y="169" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/1</text>
+<text x="352" y="169" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0</text>
+<text x="430" y="192" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">10.16.34.0/24</text>
+<line x1="1130.0" y1="180.0" x2="1130.0" y2="350.0" stroke="#4a5568" stroke-width="2"/>
+<text x="1119" y="226" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">eth3-6</text>
+<line x1="880.0" y1="180.0" x2="880.0" y2="350.0" stroke="#4a5568" stroke-width="2"/>
+<text x="869" y="226" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">eth4-6</text>
+<line x1="600.0" y1="180.0" x2="760.0" y2="350.0" stroke="#4a5568" stroke-width="2"/>
+<text x="635" y="233" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/2</text>
+<text x="709" y="312" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0</text>
+<text x="689" y="257" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">ROAS trunk</text>
+<line x1="260.0" y1="180.0" x2="260.0" y2="350.0" stroke="#4a5568" stroke-width="2"/>
+<text x="249" y="226" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/1</text>
+<text x="249" y="304" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0</text>
+<text x="272" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">ROAS trunk</text>
+<line x1="260.0" y1="350.0" x2="110.0" y2="520.0" stroke="#4a5568" stroke-width="2"/>
+<text x="211" y="389" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/1-2</text>
+<text x="142" y="467" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0-1</text>
+<text x="194" y="443" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">Po1 (PAgP)</text>
+<line x1="260.0" y1="350.0" x2="410.0" y2="520.0" stroke="#4a5568" stroke-width="2"/>
+<text x="292" y="403" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/3,1/0</text>
+<text x="361" y="481" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0-1</text>
+<text x="344" y="427" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">Po2 (PAgP)</text>
+<line x1="760.0" y1="350.0" x2="640.0" y2="520.0" stroke="#4a5568" stroke-width="2"/>
+<text x="719" y="390" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/1-2</text>
+<text x="663" y="468" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0-1</text>
+<text x="710" y="442" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">Po1 (PAgP)</text>
+<line x1="760.0" y1="350.0" x2="900.0" y2="520.0" stroke="#4a5568" stroke-width="2"/>
+<text x="789" y="403" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/3,1/0</text>
+<text x="854" y="481" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/0-1</text>
+<text x="839" y="427" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" stroke="#fff" stroke-width="3" paint-order="stroke">Po2 (PAgP)</text>
+<line x1="110.0" y1="520.0" x2="110.0" y2="680.0" stroke="#4a5568" stroke-width="2"/>
+<text x="99" y="563" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/2-3,1/0-1</text>
+<line x1="410.0" y1="520.0" x2="410.0" y2="680.0" stroke="#4a5568" stroke-width="2"/>
+<text x="399" y="563" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/2-3,1/0-1</text>
+<line x1="640.0" y1="520.0" x2="640.0" y2="680.0" stroke="#4a5568" stroke-width="2"/>
+<text x="629" y="563" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/2-3,1/0-1</text>
+<line x1="900.0" y1="520.0" x2="900.0" y2="680.0" stroke="#4a5568" stroke-width="2"/>
+<text x="889" y="563" text-anchor="middle" font-size="11" fill="#2d3748" stroke="#fff" stroke-width="3" paint-order="stroke">Gi0/2-3,1/0-1</text>
+<ellipse cx="1130" cy="60" rx="46" ry="26" fill="#f7fafc" stroke="#718096" stroke-width="3"/>
+<text x="1130" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#718096" display="inline">Net</text>
+<circle cx="1130" cy="180" r="24" fill="#fffaf0" stroke="#c05621" stroke-width="3"/>
+<path d="M1118 180 H1142 M1137 175 L1142 180 L1137 185 M1123 175 L1118 180 L1123 185" stroke="#c05621" stroke-width="2" fill="none"/>
+<text x="1130" y="184" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" display="none"></text>
+<text x="1130" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Mikrotik-1</text>
+<text x="1130" y="220" text-anchor="middle" font-size="11" fill="#4a5568">Br1 172.20.16.1/26</text>
+<circle cx="880" cy="180" r="24" fill="#fffaf0" stroke="#c05621" stroke-width="3"/>
+<path d="M868 180 H892 M887 175 L892 180 L887 185 M873 175 L868 180 L873 185" stroke="#c05621" stroke-width="2" fill="none"/>
+<text x="880" y="184" text-anchor="middle" font-size="11" font-weight="bold" fill="#c05621" display="none"></text>
+<text x="880" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Mikrotik-2</text>
+<text x="880" y="220" text-anchor="middle" font-size="11" fill="#4a5568">Br1 172.20.16.65/26</text>
+<circle cx="600" cy="180" r="24" fill="#ebf4ff" stroke="#2b6cb0" stroke-width="3"/>
+<path d="M588 180 H612 M607 175 L612 180 L607 185 M593 175 L588 180 L593 185" stroke="#2b6cb0" stroke-width="2" fill="none"/>
+<text x="600" y="184" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b6cb0" display="none"></text>
+<text x="600" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">vIOS3</text>
+<text x="600" y="220" text-anchor="middle" font-size="11" fill="#4a5568">Gi0/2.10 .129/28</text>
+<text x="600" y="233" text-anchor="middle" font-size="11" fill="#4a5568">Gi0/2.20 .145/28</text>
+<text x="600" y="246" text-anchor="middle" font-size="11" fill="#4a5568">Gi0/2.30 .161/29</text>
+<circle cx="260" cy="180" r="24" fill="#ebf4ff" stroke="#2b6cb0" stroke-width="3"/>
+<path d="M248 180 H272 M267 175 L272 180 L267 185 M253 175 L248 180 L253 185" stroke="#2b6cb0" stroke-width="2" fill="none"/>
+<text x="260" y="184" text-anchor="middle" font-size="11" font-weight="bold" fill="#2b6cb0" display="none"></text>
+<text x="260" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">vIOS4</text>
+<text x="260" y="220" text-anchor="middle" font-size="11" fill="#4a5568">Gi0/1.10 .193/28</text>
+<text x="260" y="233" text-anchor="middle" font-size="11" fill="#4a5568">Gi0/1.20 .209/28</text>
+<text x="260" y="246" text-anchor="middle" font-size="11" fill="#4a5568">Gi0/1.30 .225/29</text>
+<rect x="732" y="334" width="56" height="32" rx="5" fill="#e6fffa" stroke="#2f855a" stroke-width="3"/>
+<path d="M742 346 H778 M772 341 L778 346 L772 351 M778 356 H742 M748 351 L742 356 L748 361" stroke="#2f855a" stroke-width="1.5" fill="none"/>
+<text x="760" y="354" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f855a" display="none"></text>
+<text x="760" y="328" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Switch5</text>
+<text x="760" y="382" text-anchor="middle" font-size="11" fill="#4a5568">Core C</text>
+<text x="760" y="395" text-anchor="middle" font-size="11" fill="#4a5568">Vlan30 .162/29</text>
+<rect x="232" y="334" width="56" height="32" rx="5" fill="#e6fffa" stroke="#2f855a" stroke-width="3"/>
+<path d="M242 346 H278 M272 341 L278 346 L272 351 M278 356 H242 M248 351 L242 356 L248 361" stroke="#2f855a" stroke-width="1.5" fill="none"/>
+<text x="260" y="354" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f855a" display="none"></text>
+<text x="260" y="328" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Switch6</text>
+<text x="260" y="382" text-anchor="middle" font-size="11" fill="#4a5568">Core D</text>
+<text x="260" y="395" text-anchor="middle" font-size="11" fill="#4a5568">Vlan30 .226/29</text>
+<rect x="82" y="504" width="56" height="32" rx="5" fill="#e6fffa" stroke="#2f855a" stroke-width="3"/>
+<path d="M92 516 H128 M122 511 L128 516 L122 521 M128 526 H92 M98 521 L92 526 L98 531" stroke="#2f855a" stroke-width="1.5" fill="none"/>
+<text x="110" y="524" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f855a" display="none"></text>
+<text x="110" y="498" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Switch7</text>
+<text x="110" y="552" text-anchor="middle" font-size="11" fill="#4a5568">Vlan30 .227/29</text>
+<rect x="382" y="504" width="56" height="32" rx="5" fill="#e6fffa" stroke="#2f855a" stroke-width="3"/>
+<path d="M392 516 H428 M422 511 L428 516 L422 521 M428 526 H392 M398 521 L392 526 L398 531" stroke="#2f855a" stroke-width="1.5" fill="none"/>
+<text x="410" y="524" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f855a" display="none"></text>
+<text x="410" y="498" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Switch8</text>
+<text x="410" y="552" text-anchor="middle" font-size="11" fill="#4a5568">Vlan30 .228/29</text>
+<rect x="612" y="504" width="56" height="32" rx="5" fill="#e6fffa" stroke="#2f855a" stroke-width="3"/>
+<path d="M622 516 H658 M652 511 L658 516 L652 521 M658 526 H622 M628 521 L622 526 L628 531" stroke="#2f855a" stroke-width="1.5" fill="none"/>
+<text x="640" y="524" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f855a" display="none"></text>
+<text x="640" y="498" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Switch9</text>
+<text x="640" y="552" text-anchor="middle" font-size="11" fill="#4a5568">Vlan30 .163/29</text>
+<rect x="872" y="504" width="56" height="32" rx="5" fill="#e6fffa" stroke="#2f855a" stroke-width="3"/>
+<path d="M882 516 H918 M912 511 L918 516 L912 521 M918 526 H882 M888 521 L882 526 L888 531" stroke="#2f855a" stroke-width="1.5" fill="none"/>
+<text x="900" y="524" text-anchor="middle" font-size="11" font-weight="bold" fill="#2f855a" display="none"></text>
+<text x="900" y="498" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a202c">Switch10</text>
+<text x="900" y="552" text-anchor="middle" font-size="11" fill="#4a5568">Vlan30 .164/29</text>
+<rect x="1108" y="335" width="44" height="30" rx="4" fill="#edf2f7" stroke="#4a5568" stroke-width="3"/>
+<text x="1130" y="354" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a5568" display="inline">VPCs A</text>
+<text x="1130" y="382" text-anchor="middle" font-size="11" fill="#4a5568">3 x VPC (DHCP)</text>
+<rect x="858" y="335" width="44" height="30" rx="4" fill="#edf2f7" stroke="#4a5568" stroke-width="3"/>
+<text x="880" y="354" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a5568" display="inline">VPCs B</text>
+<text x="880" y="382" text-anchor="middle" font-size="11" fill="#4a5568">3 x VPC (DHCP)</text>
+<rect x="88" y="665" width="44" height="30" rx="4" fill="#edf2f7" stroke="#4a5568" stroke-width="3"/>
+<text x="110" y="684" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a5568" display="inline">VPCs 7</text>
+<text x="110" y="712" text-anchor="middle" font-size="11" fill="#4a5568">4 x VPC</text>
+<rect x="388" y="665" width="44" height="30" rx="4" fill="#edf2f7" stroke="#4a5568" stroke-width="3"/>
+<text x="410" y="684" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a5568" display="inline">VPCs 8</text>
+<text x="410" y="712" text-anchor="middle" font-size="11" fill="#4a5568">4 x VPC</text>
+<rect x="618" y="665" width="44" height="30" rx="4" fill="#edf2f7" stroke="#4a5568" stroke-width="3"/>
+<text x="640" y="684" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a5568" display="inline">VPCs 9</text>
+<text x="640" y="712" text-anchor="middle" font-size="11" fill="#4a5568">4 x VPC</text>
+<rect x="878" y="665" width="44" height="30" rx="4" fill="#edf2f7" stroke="#4a5568" stroke-width="3"/>
+<text x="900" y="684" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a5568" display="inline">VPCs 10</text>
+<text x="900" y="712" text-anchor="middle" font-size="11" fill="#4a5568">4 x VPC</text>
+</svg>

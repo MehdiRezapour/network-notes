@@ -46,7 +46,7 @@ flowchart LR
 ├── ccna/            5 topic files
 ├── ccnp-encor/      7 topic files
 ├── ccnp-enarsi/     7 topic files
-└── raw-notes/       original unedited notes (Persian/English)
+└── labs/            hands-on labs (EVE-NG)
 ```
 
 ## 🧭 Conventions
